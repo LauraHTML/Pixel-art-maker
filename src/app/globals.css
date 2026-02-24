@@ -170,5 +170,30 @@
   }
   body {
     @apply bg-background text-foreground;
+
+    cursor: url('/lapis.png'), auto;
+
+      a, button {
+    cursor: url('/lapis.png'), pointer;
+    }
+
+    /* Quando seleciona texto */
+    p, span, input, textarea {
+    cursor: url('/lapis.png'), text;
+    }
+
+    /* Quando arrasta algo */
+    .draggable {
+    cursor: url('/lapis.png'), grab;
+    }
+
+    .no-drop {
+    cursor: url('/lapis.png'), no-drop;
+    }
+  }
+  
+
+  h1,p{
+    font-family: var(--font-bricolage-grotesque);
   }
 }

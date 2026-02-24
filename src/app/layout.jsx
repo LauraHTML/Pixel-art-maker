@@ -1,9 +1,11 @@
-import { Familjen_Grotesk } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const familjenGrotesk = Familjen_Grotesk({
-  variable: "--font-familjen-grotesk",
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage-grotesque",
   subsets: ["latin"],
+  weight: '400',
+  display: 'swap',
 });
 
 export const metadata = {
@@ -15,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${familjenGrotesk.variable} antialiased`}
+        className={`${bricolageGrotesque.variable} antialiased`}
       >
         {children}
       </body>
